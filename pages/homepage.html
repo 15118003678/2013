@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="../css/base.css">
+    
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.css">
+    <link rel="stylesheet" href="../css/homepage.css">
+    <script src="https://unpkg.com/swiper/swiper-bundle.js"></script>
+    <script src="../js/jquery.js"></script>
+</head>
+
+<body>
+    <!-- header -->
+    <div class="header1">
+        <div class="header1-left">
+            <ul>
+                <li>
+                    <a href="#">English</a>
+                </li>
+                &nbsp;&nbsp;|
+                <li>
+                    <a href="#">中文</a>
+                </li>
+                <li>
+                    <a
+                        href="#">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header1-right">
+            <ol>
+                <li>
+                    <a href="./register.html">登录/注册</a>
+                </li>
+                <li class="phone">
+                    <a>手机版</a>
+                    <div class="phone1" style="display: none;">
+                        <img src="../img/BZ33.jpg">
+                    </div>
+                </li>
+                <li class="shop1">
+                    <a>购物袋</a>
+                    <div class="shop"  style="display: none;">
+                        <a href="./car.html">查看购物袋</a>
+                    </div>
+                </li>
+                <li class="search1">
+                    <a>搜索</a>
+                    <div class="search" style="display: none;">
+                        <input type="text" name="searchword" value="" autocomplete="off" placeholder="请输入要搜索的关键词">
+                    </div>
+                </li>
+            </ol>
+        </div>
+   
+        <div class="wrap">
+            <div class="header">
+                <a href="./homepage.html"><img src="../img/BZ1.svg"></a>
+                <ul class="nav">
+                    <li>
+                        <a href="./list.html">女装</a>
+                        <div class="bill" style="display:none;">
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="./list.html">ports 1961女装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="#">ports 1961女装</a></li>
+                                <li><a href="#">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="./list.html">ports 1961女装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./list.html">男装</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">时尚资讯</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">配饰</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">加入宝姿集团</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        
+        $('.nav>li').on('mouseover',function(){
+            $('.bill').css('display','block')
+            console.log(111)
+        })
+        $('.bill').on('mouseout',function(){
+            $('.bill').css('display','none')
+        })
+
+        $('.phone').on('mouseover',function(){
+            
+            $('.phone1').css('display','block')
+        })
+        $('.phone1').on('mouseout',function(){
+            $('.phone1').css('display','none')
+
+        })
+
+        $('.shop1').on('mouseover',function(){
+            
+            $('.shop').css('display','block')
+        })
+        $('.shop').on('mouseout',function(){
+            $('.shop').css('display','none')
+
+        })
+
+        $('.search1').on('mouseover',function(){
+            
+            $('.search').css('display','block')
+        })
+        $('.search').on('mouseout',function(){
+            $('.search').css('display','none')
+
+        })
+        // var nav = document.querySelector('.nav');
+        // // console.log(nav)
+        // var navv = document.querySelector('.nav3');
+        // // console.log(navv)
+        // var lis=nav.children;
+        
+        // for(var i = 0; i < lis.length; i++){
+        //     lis[i].onmouseover = function(){
+        //         navv.style.display='block';
+        //     }
+        //     lis[i].onmouseout = function(){
+        //         navv.style.display='none';  
+        //     }
+        // }
+        // navv.onmouseout =function(){
+        //     navv.style.display='block';
+        // }
+    </script>
+
+    <!-- photo -->
+    <div class="photo1">
+        <div class="wrap">
+            <div class="photo">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/BZ2.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ3.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ4.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ5.jpg">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <div class="swiper-pagination"></div>
+
+                    <!-- 如果需要导航按钮 -->
+                    <!-- <div class="swiper-button-prev attr"></div>
+                    <div class="swiper-button-next attr"></div> -->
+
+                    <!-- 如果需要滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- responsive -->
+    <div class="responsive1">
+        <div class="wrap">
+            <div class="responsive">
+                <img class="img-responsive" alt="" src="../img/BZ6.jpg">
+                <a class="area" href="./list.html" style="left:21.5%;top:59.3%;width:27.4%;height:27.6%;"></a>
+                <a class="area" href="./list.html" style="left:52%;top:58.5%;width:24%;height:26.2%;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- broadcast -->
+    <div class="boradcast1">
+        <div class="wrap">
+            <div class="broadcast">
+                <video width="100%" alt="" controls="controls" src="http://space.ports-intl.com/Ports/Ports-intl/website/video/2020/women_generic_FINAL.mp4"
+                    poster="../img/BZ7.jpg">您的浏览器不支持该视频格式</video>
+            </div>
+        </div>
+    </div>
+
+    <!-- features -->
+    <div class="features1">
+        <div class="wrap">
+            <div class="features">
+                <img class="img-responsive" alt="" src="../img/BZ8.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- slide1 -->
+    <div class="Carousel1;">
+        <div class="wrap">
+            <div class="Carousel">
+                <div class="swiper-container1">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/BZ9.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ10.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ11.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ12.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ13.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ14.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ15.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ16.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ17.jpg">
+                        </div>
+                    </div>
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- 如果需要导航按钮 -->
+                    <!-- <div class="swiper-button-prev attr"></div>
+                    <div class="swiper-button-next attr"></div> -->
+
+                    <!-- 如果需要滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- new -->
+    <div class="new1">
+        <div class="wrap">
+            <div class="new">
+                <img class="img-responsive" alt="" src="../img/BZ18.jpg">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- lunbo -->
+    <div class="lunbo1">
+        <div class="wrap">
+            <div class="lunbo">
+                <div class="swiper-container2">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="../img/BZ19.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ20.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ21.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ22.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ23.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ24.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ25.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ26.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ19.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ20.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ21.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ22.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ23.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ24.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ25.jpg">
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="../img/BZ26.jpg">
+                        </div>
+                    </div>
+
+                    <!-- 如果需要分页器 -->
+                    <!-- <div class="swiper-pagination"></div> -->
+
+                    <!-- 如果需要导航按钮 -->
+                    <div class="swiper-button-prev attr"></div>
+                    <div class="swiper-button-next attr"></div>
+
+                    <!-- 如果需要滚动条 -->
+                    <!-- <div class="swiper-scrollbar"></div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- brand -->
+    <div class="brand1">
+        <div class="wrap">
+            <div class="brand">
+                <img class="img-responsive" alt="" src="../img/BZ27.jpg">
+                <a class="area" href="./list.html" style="left:0.5%;top:20.3%;width:47.9%;height:77%;"></a>
+                <a class="area" href="./list.html" style="left:51.5%;top:20%;width:48.6%;height:77.2%;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- collection -->
+    <div clas="collection1">
+        <div class="wrap">
+            <div class="collection">
+                <img class="img-responsive" alt="" src="../img/BZ28.jpg">
+            </div>
+        </div>
+    </div>
+
+    <!-- explore -->
+    <div class="explore1">
+        <div class="wrap">
+            <div class="explore">
+                <img class="img-responsive" alt=""
+                    src="http://space-qn.ports-intl.com/web/ports/intl/img/202101/06111848.jpg">
+                <a class="area" href="./list.html" style="left:11.9%;top:8.7%;width:36.8%;height:85.7%;"></a>
+                <a class="area" href="./list.html" style="left:51.9%;top:8.7%;width:36.6%;height:84.8%;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- about -->
+    <div class="about1">
+        <div class="wrap">
+            <div class="about">
+                <img class="img-responsive" alt="" src="../img/BZ29.jpg">
+                <a class="area" href="./list.html" style="left:1.6%;top:34.1%;width:31.3%;height:48%;"></a>
+                <a class="area" href="./list.html" style="left:34.3%;top:34.8%;width:31.4%;height:50%;"></a>
+                <a class="area" href="./list.html" style="left:67%;top:34.6%;width:31.4%;height:50.7%;"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- classification -->
+    <div class="classification1">
+        <div class="wrap">
+            <div class="classification">
+                <img class="img-responsive" alt="" src="../img/BZ30.jpg">
+                <a class="area" href="./list.html" style="left:35.9%;top:33.6%;width:11.6%;height:55.3%;"></a>
+                <a class="area" href="./list.html" style="left:49.8%;top:34.5%;width:14.5%;height:51.5%;"></a>
+                <a class="area" href="./list.html" style="left:66.5%;top:35.3%;width:11.3%;height:51.5%;"></a>
+                <a class="area" href="./list.html" style="left:4.9%;top:29.6%;width:13.3%;height:63.7%;"></a>
+                <a class="area" href="./list.html" style="left:20%;top:30.9%;width:11.8%;height:60.1%;"></a>
+                <a class="area" href="./list.html" style="left:79.5%;top:33.4%;width:16.8%;height:55.9%;"></a>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- choice -->
+    <div class="choice1">
+        <div class="wrap">
+            <div class="choice">
+                <img class="img-responsive" alt="" src="../img/BZ31.jpg">
+                <a href="homepage.html"><img class="img-responsive" alt="" src="../img/BZ32.jpg"></a>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <div class="footer1">
+        <div class="wrap">
+            <div class="footer">
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    <script src="../js/homepaage.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/bootstrap.js"></script>
+            
+</body>
+</html>

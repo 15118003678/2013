@@ -1,0 +1,218 @@
+body{
+    background-color: white;
+    widows: 100%;
+    height: 100%;
+}
+
+/* 版心 */
+.wrap{
+    width: 1600px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+
+/* heaader */
+.header1{
+    width: 100%;
+    height: 120px;
+    /* background-color: pink; */
+    box-sizing: border-box;
+    display: flex;
+    position: relative;
+}
+.n1{
+    display: none;
+}
+.header1-left ul{
+    display: flex;
+    
+}
+.header1-left{
+    position: absolute;
+    left: 0;
+    top: 15px;
+}
+
+.header1-left ul li a{
+    color: black;
+    font-size: 15px;
+    margin-left: 10px;
+    font-weight: bold;
+}
+.header1-right{
+    position: absolute;
+    right: 0;
+    top: 15px;
+}
+.header1-right ol{
+    display: flex;
+}
+.header1-right ol li a{
+    color: black;
+    font-size: 15px;
+    margin-left: 30px;
+    font-weight: bold;
+}
+.header img{
+    width: 174px;
+    height: 50px;
+    margin: 0 auto;
+    margin-top: 15px;
+}
+.nav{
+    display: flex;
+    font-size: 20px;
+    justify-content: space-around;
+    margin-top: 20px;
+    position: relative;
+    
+}
+.nav a{
+    color:black;
+}
+.bill{
+    width: 1700px;
+    height: 350px;
+    background: rgb(240, 240, 240);
+    background-size: contain;
+    opacity: 0.95;
+    
+    line-height: 60px;
+    position:absolute;
+    top: 56px;
+    left: -234px;
+    
+    z-index: 10;
+}
+.bill ol{
+    float: left;
+    text-align: center;
+    margin-left: 70px;
+}
+.bill ol a{
+    color: black;
+}
+.bill ol a:hover{
+    border-bottom: black 3px solid;
+    text-decoration: none;
+}
+
+.phone1{
+    width: 80px;
+    height: 80px;
+    position: fixed;
+    top: 35px;
+    right: 119px;
+    z-index: 50;
+}
+.phone1 img{
+    height: 80px;
+}
+.shop{
+    width: 260px;
+    height: 35px;
+    line-height: 35px;
+    text-align:center;
+    color: white;
+    font-size: 20px;
+    background-color: black;
+    position: fixed;
+    z-index: 60;
+    top: 35px;
+    right: 39px;
+}
+.shop a{
+    color:white!important;
+    text-decoration: none;
+}
+.search{
+    width: 280px;
+    height: 35px;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    position: fixed;
+    top: 36px;
+    right: 0;
+
+}
+
+
+/* Navigation1 */
+.Navigation1{
+    background-color: #f0f0f0;
+    height: 160px;
+    margin-top: 20px
+}
+.Navigation{
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+.Navigation a{
+    display: inline-block;
+    color: black;
+    font-size: 14px;
+    line-height: 40px;
+    
+}
+
+
+/* container */
+.container{
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+
+/* footer */
+.footer1{
+    background-color: black;
+    height: 188px;
+    width: 100%;
+}
+.footer ul{
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-around;
+}
+.footer a{
+    color: white;
+
+}
+.footer li{
+    margin-top: 10px;
+}
+
+
+.pagination{
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.h3{
+    display: inline-block;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow:ellipsis;
+}
+.thumbnail{
+    width: 260px!important;
+    height: 450px!important;
+}
+.caption h3{
+    word-break:keep-all;
+    white-space:nowrap;
+    overflow:hidden;
+    text-overflow:ellipsis; 
+    margin-bottom: 10px;
+}
+.pagination{
+    height: 50px;
+}
+.pagination_p{
+    height: 100px;
+}

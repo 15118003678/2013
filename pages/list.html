@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list</title>
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <script src="../js/jquery.js"></script>
+    <link rel="stylesheet" href="../css/base.css">
+    <link rel="stylesheet" href="../css/list.css">
+</head>
+<body>
+     <!-- header -->
+    <div class="header1">
+        <div class="header1-left">
+            <ul>
+                <li>
+                    <a href="#">English</a>
+                </li>
+                &nbsp;&nbsp;|
+                <li>
+                    <a href="#">中文</a>
+                </li>
+                <li>
+                    <a
+                        href="#">客户服务</a>
+                </li>
+            </ul>
+        </div>
+        <div class="header1-right">
+            <ol>
+                <li>
+                    <a href="./register.html">登录/注册</a>
+                </li>
+                <li class="phone">
+                    <a>手机版</a>
+                    <div class="phone1" style="display: none;">
+                        <img src="../img/BZ33.jpg">
+                    </div>
+                </li>
+                <li class="shop1">
+                    <a>购物袋</a>
+                    <div class="shop"  style="display: none;">
+                        <a href="./car.html">查看购物袋</a>
+                    </div>
+                </li>
+                <li class="search1">
+                    <a>搜索</a>
+                    <div class="search" style="display: none;">
+                        <input type="text" name="searchword" value="" autocomplete="off" placeholder="请输入要搜索的关键词">
+                    </div>
+                </li>
+            </ol>
+        </div>
+   
+        <div class="wrap">
+            <div class="header">
+                <a href="./homepage.html"><img src="../img/BZ1.svg"></a>
+                <ul class="nav">
+                    <li>
+                        <a href="./list.html">女装</a>
+                        <div class="bill" style="display:none;">
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="./list.html">ports 1961女装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="#">ports 1961女装</a></li>
+                                <li><a href="#">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">女装</a></li>
+                                <li><a href="./list.html">ports internation女装</a></li>
+                                <li><a href="./list.html">ports 1961女装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                            <ol>
+                                <li><a href="./list.html" style="font-weight: bold;">男装</a></li>
+                                <li><a href="./list.html">ports internation男装</a></li>
+                                <li><a href="./list.html">ports 1961男装</a></li>
+                                <li><a href="./list.html">portsPURE</a></li>
+                            </ol>
+                        </div>
+                    </li>
+                    <li>
+                        <a href="./list.html">男装</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">时尚资讯</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">配饰</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">关于我们</a>
+                    </li>
+                    <li>
+                        <a href="./list.html">加入宝姿集团</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <script>
+        
+        $('.nav>li').on('mouseover',function(){
+            $('.bill').css('display','block')
+            console.log(111)
+        })
+        $('.bill').on('mouseout',function(){
+            $('.bill').css('display','none')
+        })
+
+        $('.phone').on('mouseover',function(){
+            
+            $('.phone1').css('display','block')
+        })
+        $('.phone1').on('mouseout',function(){
+            $('.phone1').css('display','none')
+
+        })
+
+        $('.shop1').on('mouseover',function(){
+            
+            $('.shop').css('display','block')
+        })
+        $('.shop').on('mouseout',function(){
+            $('.shop').css('display','none')
+
+        })
+
+        $('.search1').on('mouseover',function(){
+            
+            $('.search').css('display','block')
+        })
+        $('.search').on('mouseout',function(){
+            $('.search').css('display','none')
+
+        })
+        // var nav = document.querySelector('.nav');
+        // // console.log(nav)
+        // var navv = document.querySelector('.nav3');
+        // // console.log(navv)
+        // var lis=nav.children;
+        
+        // for(var i = 0; i < lis.length; i++){
+        //     lis[i].onmouseover = function(){
+        //         navv.style.display='block';
+        //     }
+        //     lis[i].onmouseout = function(){
+        //         navv.style.display='none';  
+        //     }
+        // }
+        // navv.onmouseout =function(){
+        //     navv.style.display='block';
+        // }
+    </script>
+
+
+    <!-- Navigation -->
+    <div class="Navigation1">
+        <div class="wrap">
+            <div class="Navigation">
+                <ul>
+                    <li><a href="./list.html">最新上线</a></li>
+                    <li><a href="./list.html">背心/马甲</a></li>
+                    <li><a href="./list.html">休闲夹克</a></li>
+                    <li><a href="./list.html">特惠精选</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./list.html">最新上线</a></li>
+                    <li><a href="./list.html">背心/马甲</a></li>
+                    <li><a href="./list.html">休闲夹克</a></li>
+                    <li><a href="./list.html">特惠精选</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./list.html">最新上线</a></li>
+                    <li><a href="./list.html">背心/马甲</a></li>
+                    <li><a href="./list.html">休闲夹克</a></li>
+                    <li><a href="./list.html">特惠精选</a></li>
+                </ul>
+                <ul>
+                    <li><a href="./list.html">最新上线</a></li>
+                    <li><a href="./list.html">背心/马甲</a></li>
+                    <li><a href="./list.html">休闲夹克</a></li>
+                    <li><a href="./list.html">特惠精选</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- container -->
+    <div class="container">
+        <div class="pagination"></div>
+        <div class="row">
+           
+            
+        </div>
+        <div class="pagination"></div>
+    </div>
+    
+
+
+     <!-- footer -->
+     <div class="footer1">
+        <div class="wrap">
+            <div class="footer">
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+                <ul>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                    <li><a href="#">官网政策</a></li>
+                </ul>
+
+            </div>
+        </div>
+    </div>
+    
+    <script src="../js/bootstrap.js"></script>
+    <script src="../js/pagination.js"></script>
+    <script src="../js/ajax.js"></script>
+    <script src="../js/list.js"></script>
+</body>
+</html>
